@@ -59,6 +59,7 @@ def me():
 
 @auth_bp.route('/images/<filename>')
 def images(filename):
+    print(UPLOAD_FOLDER, filename)
     return send_from_directory(UPLOAD_FOLDER, filename)
 
 def check_user():

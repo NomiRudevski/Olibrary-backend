@@ -23,7 +23,7 @@ Session(app)
 # Optional: Configure upload folder
 UPLOAD_FOLDER = os.path.join(os.getcwd(), 'images')
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
-
+print(UPLOAD_FOLDER)
 # Create SQLAlchemy session
 SQL_Session = sessionmaker(bind=engine)
 SQL_session = SQL_Session()
