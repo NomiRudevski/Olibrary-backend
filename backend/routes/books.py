@@ -1,5 +1,5 @@
 from flask import Blueprint, request, jsonify
-from models import Book
+from .models import Book
 from werkzeug.utils import secure_filename
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy import create_engine
