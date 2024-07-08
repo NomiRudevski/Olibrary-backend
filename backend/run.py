@@ -6,7 +6,7 @@ from .routes.auth import auth_bp
 from .routes.loans import loans_bp
 
 # Enable CORS
-CORS(app, origins="https://nomirudevski.github.io/", supports_credentials=True)
+CORS(app, supports_credentials=True)
 
 # Register blueprints
 app.register_blueprint(books_bp)
