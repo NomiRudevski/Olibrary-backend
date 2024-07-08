@@ -3,7 +3,7 @@ from ..models import User
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy import create_engine
 import bcrypt
-from .app import UPLOAD_FOLDER
+from ..app import UPLOAD_FOLDER
 
 engine = create_engine("sqlite:///../data.db", echo=True)
 SQL_Session = sessionmaker(bind=engine)

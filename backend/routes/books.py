@@ -5,7 +5,7 @@ from sqlalchemy.orm import sessionmaker
 from sqlalchemy import create_engine
 from .auth import check_user,check_admin
 import os
-from .app import UPLOAD_FOLDER
+from ..app import UPLOAD_FOLDER
 
 engine = create_engine("sqlite:///../data.db", echo=True)
 Session = sessionmaker(bind=engine)
