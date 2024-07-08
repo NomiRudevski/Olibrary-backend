@@ -5,7 +5,7 @@ from sqlalchemy import create_engine
 from .auth import check_user,check_admin
 import bcrypt
 
-engine = create_engine("sqlite:///../data.db", echo=True)
+engine = create_engine("sqlite:///./data.db", echo=True)
 Session = sessionmaker(bind=engine)
 session = Session()
 

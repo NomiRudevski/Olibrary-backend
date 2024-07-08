@@ -5,7 +5,7 @@ from sqlalchemy import create_engine
 from datetime import datetime, timedelta
 from .auth import check_admin, check_user
 
-engine = create_engine("sqlite:///../data.db", echo=True)
+engine = create_engine("sqlite:///./data.db", echo=True)
 Session = sessionmaker(bind=engine)
 session = Session()
 
