@@ -6,7 +6,7 @@ from .routes.auth import auth_bp
 from .routes.loans import loans_bp
 
 # Enable CORS
-CORS(app, origins="http://127.0.0.1:5500", supports_credentials=True)
+CORS(app, origins="https://olibrary-backend.onrender.com", supports_credentials=True)
 
 # Register blueprints
 app.register_blueprint(books_bp)
