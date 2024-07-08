@@ -1,5 +1,5 @@
 from flask import Blueprint, request, jsonify
-from models import Loan, Book
+from ..models import Loan, Book
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy import create_engine
 from datetime import datetime, timedelta

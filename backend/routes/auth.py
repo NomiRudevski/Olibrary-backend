@@ -1,5 +1,5 @@
 from flask import Blueprint, request, jsonify, session, send_from_directory
-from models import User
+from ..models import User
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy import create_engine
 import bcrypt
