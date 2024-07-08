@@ -44,7 +44,7 @@ def logout():
 
 @auth_bp.route("/check-admin")
 def check_admin():
-    user = SQL_session.query(User).filter(User.user_name == session.get("name")).first()
+    user = SQL_session.query(User).filter(User.user_name == request.args.get("name")).first()
     if user.permission_level == 'A':
         return jsonify({'user_permission' : True})
     return jsonify({'user_permission' : False})
