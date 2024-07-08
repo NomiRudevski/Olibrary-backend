@@ -2,7 +2,7 @@ from sqlalchemy import create_engine
 from flask import Flask
 from flask_session import Session
 from sqlalchemy.orm import sessionmaker
-from models import *
+from .models import *
 
 
 
