@@ -12,7 +12,7 @@ app.config["SESSION_TYPE"] = "filesystem"
 app.secret_key = 'njf74^&*^ndk'
 
 # Configure SQLAlchemy engine
-engine = create_engine("sqlite:///../data.db", echo=True)
+engine = create_engine("sqlite:///./data.db", echo=True)
 Base.metadata.bind = engine
 
 # Configure session
