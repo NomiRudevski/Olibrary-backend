@@ -1,5 +1,5 @@
 from flask import Blueprint, request, jsonify
-from .models import User
+from models import User
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy import create_engine
 from .auth import check_user,check_admin
